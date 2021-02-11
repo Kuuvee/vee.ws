@@ -1,9 +1,9 @@
 h1 {
   mix-blend-mode: color-burn;
-  padding: 400px 200px;
+  padding: 355px 150px;
   margin: 0;
   color: teal;
-  font-size: 10em;
+  font-size: 12em;
 }
 
 body,
@@ -13,9 +13,20 @@ html {
 }
 
 body {
-  background-image: url("https://source.unsplash.com/random/1920x180");
+  background-image: url("https://source.unsplash.com/random");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
+}
+
+img {
+  width: 50px;
+}
+.instagram-link {
+  mix-blend-mode: screen;
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  margin: auto;
 }
