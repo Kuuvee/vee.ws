@@ -30,3 +30,11 @@ img {
   position: absolute;
   margin: auto;
 }
+.content-music {
+  margin: auto;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  font-size: 20px;
+  color: #000;
+}
