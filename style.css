@@ -1,0 +1,21 @@
+h1 {
+  mix-blend-mode: color-burn;
+  padding: 400px 200px;
+  margin: 0;
+  color: teal;
+  font-size: 10em;
+}
+
+body,
+html {
+  margin: 0;
+  background-color: #fff;
+}
+
+body {
+  background-image: url("https://source.unsplash.com/random/1920x180");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
