@@ -27,14 +27,14 @@ section p:hover {
   background-color: rgb(74, 252, 169);
   grid-area: Content;
 }
-section img {
+.img-grid img {
   height: 300px;
   width: 450px;
   border-radius: 100px;
   margin: 10px 30px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
-section img:hover {
+.img-grid img:hover {
   border-radius: 50px;
   margin: 10px 30px;
   box-shadow: 5px 5px 1px rgba(255, 0, 0, 0.5);
@@ -64,4 +64,19 @@ footer p {
     font-size: 18px;
     padding-top: 25px;
   }
+}
+.home-page {
+  background-color: #fff;
+  padding-left: 95%;
+}
+.home-page img {
+  width: 40px;
+  height: 40px;
+  border: red 5px solid;
+  border-radius: 15px;
+  padding: 5px;
+}
+.home-page img:hover {
+  border: salmon 5px solid;
+  background-color: pink;
 }
