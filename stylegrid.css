@@ -51,20 +51,6 @@ footer p {
   background-color: #fff;
   padding: 20px;
 }
-
-@media screen and (max-width: 450px) {
-  section img {
-    height: 200px;
-    width: 300px;
-    border-radius: 100px;
-    margin: 5px auto;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-  }
-  footer p {
-    font-size: 18px;
-    padding-top: 25px;
-  }
-}
 .home-page {
   background-color: #fff;
   padding-left: 95%;
@@ -79,4 +65,34 @@ footer p {
 .home-page img:hover {
   border: salmon 5px solid;
   background-color: pink;
+}
+
+@media screen and (max-width: 450px) {
+  .img-grid img {
+    height: 200px;
+    width: 300px;
+    border-radius: 100px;
+    margin: 5px auto;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  footer p {
+    font-size: 18px;
+    padding-top: 25px;
+  }
+  .home-page {
+    background-color: #fff;
+    padding-left: 0%;
+    margin: 0;
+  }
+  .home-page img {
+    width: 25px;
+    height: 25px;
+    border: red 5px solid;
+    border-radius: 15px;
+    padding: 5px;
+  }
+  .home-page img:hover {
+    border: salmon 5px solid;
+    background-color: pink;
+  }
 }
