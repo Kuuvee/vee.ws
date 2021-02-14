@@ -67,7 +67,7 @@ footer p {
   background-color: pink;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 720px) {
   .img-grid img {
     height: 200px;
     width: 300px;
