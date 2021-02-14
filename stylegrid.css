@@ -29,7 +29,7 @@ section p:hover {
 }
 section img {
   height: 300px;
-  width: 500px;
+  width: 450px;
   border-radius: 100px;
   margin: 10px 30px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
@@ -50,4 +50,18 @@ footer p {
 .img-grid {
   background-color: #fff;
   padding: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  section img {
+    height: 200px;
+    width: 300px;
+    border-radius: 100px;
+    margin: 5px auto;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  }
+  footer p {
+    font-size: 18px;
+    padding-top: 25px;
+  }
 }
