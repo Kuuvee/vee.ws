@@ -16,7 +16,7 @@ html {
   grid-template-areas: "Header Header" "Content Content" "Footer Footer";
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 50%;
 }
 header {
   padding-top: 20%;
