@@ -13,14 +13,14 @@ html {
   font-size: 50px;
   text-align: center;
   grid-template-columns: 300px auto;
-  grid-template-rows: 10px 270px minmax(300px, auto) 50px;
-  grid-template-areas: "Nav Nav" "Nav Nav" "Header Header" "Content Content" "Footer Footer";
+  grid-template-rows: 10px 250px minmax(300px, auto) 50px;
+  grid-template-areas: "Nav Nav" "Header Header" "Content Content" "Footer Footer";
   margin-left: auto;
   margin-right: auto;
   width: 40%;
 }
 header {
-  padding-top: 2em;
+  padding-top: 1.7em;
   grid-area: Header;
 }
 header h1 {
@@ -29,6 +29,7 @@ header h1 {
   color: #444;
 }
 nav {
+  grid-area: Nav;
   padding-left: 15em;
   margin-bottom: 10em;
   padding-top: 1em;
@@ -153,87 +154,6 @@ footer {
 footer p {
   font-size: 25px;
   padding-top: 0px;
-}
-
-@media screen and (max-width: 1400px) {
-  .container {
-    display: grid;
-    font-size: 50px;
-    text-align: center;
-    grid-template-columns: 300px auto;
-    grid-template-rows: 150px minmax(200px, auto) 50px;
-    grid-template-areas: "Nav Nav" "Header Header" "Content Content" "Footer Footer";
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-  header {
-    padding-top: 8%;
-    grid-area: Header;
-  }
-  header h1 {
-    text-align: center;
-    font-size: 1.5em;
-    color: #444;
-  }
-  section h1 {
-    font-size: 0.6em;
-    text-align: left;
-    margin-left: 40px;
-    margin-bottom: 10px;
-    color: #444;
-    font-weight: normal;
-  }
-  .post-meta {
-    margin: 0;
-    padding: 0.25em 0;
-    color: #aaa;
-    color: rgba(0, 0, 0, 0.35);
-    font-size: 0.5em;
-  }
-  .post-block .post-title a:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  .post-title {
-    font-size: 0.5em;
-  }
-
-  .post-block:hover {
-    margin: 0;
-    padding: 0.4em 2em;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-left: none;
-    border-right: none;
-    text-align: left;
-    background-color: rgb(255, 255, 255);
-    color: #c66;
-    border-style: inset;
-  }
-  section hr {
-    border: 0;
-    height: 0.3em;
-    background: #c66;
-    display: block;
-    clear: both;
-    margin: 0.6em 0.8em;
-    padding: 0;
-    border-radius: 0.25em;
-  }
-  footer {
-    grid-area: Footer;
-  }
-  footer p {
-    font-size: 20px;
-    padding-top: 0px;
-  }
 }
 @media screen and (max-width: 720px) {
   .container {
