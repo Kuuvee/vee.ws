@@ -6,34 +6,27 @@ body,
 html {
   margin: 0;
   background-color: #f9f4ed;
+  font-family: "HelveticaNeue-CondensedBold", "trebuchet ms", sans-serif;
 }
 .container {
   display: grid;
   font-size: 50px;
   text-align: center;
   grid-template-columns: 300px auto;
-  grid-template-rows: 300px minmax(550px, auto) 70px;
+  grid-template-rows: 270px minmax(300px, auto) 50px;
   grid-template-areas: "Header Header" "Content Content" "Footer Footer";
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 40%;
 }
 header {
-  padding-top: 20%;
+  padding-top: 13%;
   grid-area: Header;
 }
 header h1 {
   text-align: center;
-}
-header hr {
-  border: 0;
-  height: 0.3em;
-  background: #c66;
-  display: block;
-  clear: both;
-  margin: 1em 0.8em;
-  padding: 0;
-  border-radius: 0.25em;
+  font-size: 2.2em;
+  color: #444;
 }
 section {
   margin-top: 0;
@@ -41,37 +34,78 @@ section {
   grid-area: Content;
 }
 section h1 {
-  font-size: 0.6em;
+  font-size: 0.7em;
   text-align: left;
   margin-left: 40px;
   margin-bottom: 10px;
+  color: #444;
+  font-weight: normal;
 }
-section a {
+.post-list {
+  padding-bottom: 2em;
+  margin-bottom: 0;
+}
+.post-meta {
+  margin: 0;
+  padding: 0.25em 0;
+  color: #aaa;
+  color: rgba(0, 0, 0, 0.35);
   font-size: 0.6em;
-  color: rgb(80, 80, 80);
-  border: rgb(194, 194, 194) 1px solid;
-  border-left: 0;
-  border-right: 0;
-  padding: 30px;
-  text-decoration: none;
-  line-height: 3.15em;
 }
-section a:hover {
+.post-block {
+  margin: 0;
+  padding: 0.4em 2em;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  text-align: left;
+}
+.post-block a {
+  text-decoration: none;
+  color: #444;
+}
+.post-block .post-title {
+  margin: 0;
+}
+.post-block .post-title a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.post-title {
+  font-size: 0.7em;
+}
+.post-title a {
+  font-size: 0.7em;
+  font-weight: normal;
+}
+.post-block:hover {
+  margin: 0;
+  padding: 0.4em 2em;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
   color: #c66;
-  border: rgb(194, 194, 194) 1px solid;
-  border-left: 0;
-  border-right: 0;
-  padding: 30px;
-  background-color: whitesmoke;
-  text-decoration: none;
+  border-style: inset;
 }
+
 section hr {
   border: 0;
   height: 0.3em;
   background: #c66;
   display: block;
   clear: both;
-  margin: 1em 0.8em;
+  margin: 0.6em 0.8em;
   padding: 0;
   border-radius: 0.25em;
 }
@@ -80,5 +114,30 @@ footer {
 }
 footer p {
   font-size: 25px;
-  padding-top: 10px;
+  padding-top: 0px;
+}
+@media screen and (max-width: 450px) {
+  header h1 {
+    font-size: 1em;
+  }
+  footer p {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  section h1 {
+    font-size: 0.5em;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  section a {
+    font-size: 0.35em;
+    color: rgb(80, 80, 80);
+    border: rgb(194, 194, 194) 1px solid;
+    border-left: 0;
+    border-right: 0;
+    padding: 30px;
+    text-decoration: none;
+    line-height: 3.15em;
+  }
 }
