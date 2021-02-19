@@ -70,7 +70,7 @@ footer {
     width: 30px;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
   section h1 {
     mix-blend-mode: color-burn;
     display: block;
