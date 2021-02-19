@@ -199,11 +199,11 @@ footer p {
     font-size: 50px;
     text-align: center;
     grid-template-columns: auto;
-    grid-template-rows: 100px minmax(200px, auto) 45px;
+    grid-template-rows: 100px minmax(500px, auto) 20px;
     grid-template-areas: "Header Header" "Content Content" "Footer Footer";
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 90%;
   }
   header {
     padding-top: 15%;
@@ -211,7 +211,7 @@ footer p {
   }
   header h1 {
     text-align: center;
-    font-size: 0.7em;
+    font-size: 0.8em;
     color: #444;
   }
   section h1 {
