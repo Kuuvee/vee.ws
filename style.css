@@ -20,14 +20,45 @@ html {
 header {
   margin: auto;
 }
-.instagram-link {
-  mix-blend-mode: screen;
-  top: 5px;
-  right: 5px;
-  position: absolute;
+nav {
+  padding-left: 116em;
+  padding-top: 0.5em;
 }
-.instagram-link img {
-  width: 50px;
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: lightpink;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: lightpink;
 }
 section h1 {
   mix-blend-mode: color-burn;
@@ -42,10 +73,9 @@ footer {
   position: absolute;
   bottom: 5px;
 }
-.content-music {
-  margin-left: 10px;
-  font-size: 20px;
-  color: #000;
+.copyright p {
+  padding-left: 87em;
+  font-size: 1.1em;
 }
 @media screen and (max-width: 1700px) {
   section h1 {
@@ -56,15 +86,6 @@ footer {
     margin: auto;
     color: teal;
     font-size: 220px;
-  }
-  .instagram-link {
-    mix-blend-mode: screen;
-    top: 5px;
-    right: 5px;
-    position: absolute;
-  }
-  .instagram-link img {
-    width: 50px;
   }
 }
 
@@ -78,15 +99,6 @@ footer {
     color: teal;
     font-size: 180px;
   }
-  .instagram-link {
-    mix-blend-mode: screen;
-    top: 5px;
-    right: 5px;
-    position: absolute;
-  }
-  .instagram-link img {
-    width: 47px;
-  }
 }
 @media screen and (max-width: 1024px) {
   section h1 {
@@ -97,20 +109,6 @@ footer {
     margin: auto;
     color: teal;
     font-size: 200px;
-  }
-  .instagram-link {
-    mix-blend-mode: screen;
-    top: 5px;
-    right: 5px;
-    position: absolute;
-  }
-  .instagram-link img {
-    width: 80px;
-  }
-  .content-music {
-    margin-left: 10px;
-    font-size: 27px;
-    color: #000;
   }
 }
 @media screen and (max-width: 720px) {
@@ -123,15 +121,6 @@ footer {
     color: teal;
     font-size: 75px;
   }
-  .instagram-link {
-    mix-blend-mode: screen;
-    top: 5px;
-    right: 5px;
-    position: absolute;
-  }
-  .instagram-link img {
-    width: 30px;
-  }
 }
 @media screen and (max-width: 768px) {
   section h1 {
@@ -142,15 +131,6 @@ footer {
     margin: auto;
     color: teal;
     font-size: 135px;
-  }
-  .instagram-link {
-    mix-blend-mode: screen;
-    top: 5px;
-    right: 5px;
-    position: absolute;
-  }
-  .instagram-link img {
-    width: 50px;
   }
 }
 @media screen and (max-width: 540px) {
@@ -163,20 +143,6 @@ footer {
     color: teal;
     font-size: 100px;
   }
-  .instagram-link {
-    mix-blend-mode: screen;
-    top: 5px;
-    right: 5px;
-    position: absolute;
-  }
-  .instagram-link img {
-    width: 40px;
-  }
-  .content-music {
-    margin-left: 10px;
-    font-size: 17px;
-    color: #000;
-  }
 }
 @media screen and (max-width: 414px) {
   section h1 {
@@ -187,20 +153,6 @@ footer {
     margin: auto;
     color: teal;
     font-size: 80px;
-  }
-  .instagram-link {
-    mix-blend-mode: screen;
-    top: 5px;
-    right: 5px;
-    position: absolute;
-  }
-  .instagram-link img {
-    width: 38px;
-  }
-  .content-music {
-    margin-left: 10px;
-    font-size: 17px;
-    color: #000;
   }
 }
 @media screen and (max-width: 375px) {
@@ -213,18 +165,20 @@ footer {
     color: teal;
     font-size: 75px;
   }
-  .instagram-link {
-    mix-blend-mode: screen;
-    top: 5px;
-    right: 5px;
-    position: absolute;
+  nav {
+    padding-left: 20.5em;
+    padding-top: 0.5em;
   }
-  .instagram-link img {
-    width: 38px;
+  .dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
   }
-  .content-music {
-    margin-left: 10px;
-    font-size: 15px;
-    color: #000;
+  .copyright p {
+    padding-left: 11em;
+    font-size: 0.7em;
   }
 }

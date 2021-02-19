@@ -13,20 +13,62 @@ html {
   font-size: 50px;
   text-align: center;
   grid-template-columns: 300px auto;
-  grid-template-rows: 270px minmax(300px, auto) 50px;
-  grid-template-areas: "Header Header" "Content Content" "Footer Footer";
+  grid-template-rows: 10px 270px minmax(300px, auto) 50px;
+  grid-template-areas: "Nav Nav" "Nav Nav" "Header Header" "Content Content" "Footer Footer";
   margin-left: auto;
   margin-right: auto;
   width: 40%;
 }
 header {
-  padding-top: 13%;
+  padding-top: 2em;
   grid-area: Header;
 }
 header h1 {
   text-align: center;
   font-size: 2.2em;
   color: #444;
+}
+nav {
+  padding-left: 15em;
+  margin-bottom: 10em;
+  padding-top: 1em;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: #f9f4ed;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 30px;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 20px;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #c66;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #c66;
 }
 section {
   margin-top: 0;
@@ -120,7 +162,7 @@ footer p {
     text-align: center;
     grid-template-columns: 300px auto;
     grid-template-rows: 150px minmax(200px, auto) 50px;
-    grid-template-areas: "Header Header" "Content Content" "Footer Footer";
+    grid-template-areas: "Nav Nav" "Header Header" "Content Content" "Footer Footer";
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -198,9 +240,9 @@ footer p {
     display: grid;
     font-size: 50px;
     text-align: center;
-    grid-template-columns: auto;
-    grid-template-rows: 100px minmax(500px, auto) 20px;
-    grid-template-areas: "Header Header" "Content Content" "Footer Footer";
+    grid-template-columns: 300px;
+    grid-template-rows: 10px 100px minmax(100px, auto) 20px;
+    grid-template-areas: "Nav Nav" "Header Header" "Content Content" "Footer Footer";
     margin-left: auto;
     margin-right: auto;
     width: 90%;

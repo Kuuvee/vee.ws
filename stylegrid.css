@@ -7,18 +7,65 @@
   font-size: 50px;
   text-align: center;
   grid-template-columns: 300px auto;
-  grid-template-rows: minmax(250px, auto) 70px;
-  grid-template-areas: "Content Content" "Footer Footer";
+  grid-template-rows: 0px 100px minmax(250px, auto) 70px;
+  grid-template-areas: "nav nav" "Header Header" "Content Content" "Footer Footer";
 }
-/* header {
-  background-color: aquamarine;
+nav {
+  padding-left: 36.5em;
+  margin-bottom: 10em;
+  padding-top: 0.22em;
+  grid-area: nav;
+  background-color: lightslategray;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: #f9f4ed;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 30px;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 20px;
+  right: 0;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #c66;
+}
+header {
+  margin: 0;
+  padding: 0;
   grid-area: Header;
-} */
-/* aside {
-  background-color: cornflowerblue;
-  height: 650px;
-  grid-area: Navigation;
-} */
+  background-color: lightsalmon;
+}
+header h1 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #444;
+}
 section {
   background-color: rgb(91, 155, 240);
   grid-area: Content;
@@ -67,7 +114,7 @@ footer p {
   background-color: pink;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 450px) {
   .img-grid img {
     height: 200px;
     width: 300px;
