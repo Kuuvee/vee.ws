@@ -2,20 +2,21 @@
   margin: 0;
   padding: 0;
 }
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: "HelveticaNeue-CondensedBold", "trebuchet ms", sans-serif;
+}
+
 .container {
   background-image: url("https://source.unsplash.com/random");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
   overflow: hidden;
   margin: auto;
-}
-body,
-html {
-  margin: 0;
-  background-color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100vh;
 }
 header {
   margin: auto;
@@ -77,17 +78,6 @@ footer {
   padding-left: 87em;
   font-size: 1.1em;
 }
-@media screen and (max-width: 1700px) {
-  section h1 {
-    mix-blend-mode: color-burn;
-    display: block;
-    padding-top: 270px;
-    padding-left: 99px;
-    margin: auto;
-    color: teal;
-    font-size: 220px;
-  }
-}
 
 @media screen and (max-width: 1400px) {
   section h1 {
@@ -98,6 +88,38 @@ footer {
     margin: auto;
     color: teal;
     font-size: 180px;
+  }
+}
+@media screen and (max-width: 1080px) and (min-height: 2340px) {
+  /* Mi Note 10 Lite */
+  section h1 {
+    mix-blend-mode: color-burn;
+    display: block;
+    padding-top: 950px;
+    padding-left: 40px;
+    margin: auto;
+    color: teal;
+    font-size: 200px;
+  }
+  nav {
+    padding-left: 60em;
+    padding-top: 1em;
+  }
+  .dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 30px;
+    font-size: 50px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown-content a {
+    font-size: 50px;
+  }
+  .copyright p {
+    padding-left: 5em;
+    padding-bottom: 0;
+    font-size: 2.5em;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -111,6 +133,70 @@ footer {
     font-size: 200px;
   }
 }
+@media screen and (max-width: 1024px) and (min-height: 1366px) {
+  /* iPad Pro */
+  section h1 {
+    mix-blend-mode: color-burn;
+    display: block;
+    padding-top: 425px;
+    padding-left: 40px;
+    margin: auto;
+    color: teal;
+    font-size: 200px;
+  }
+  nav {
+    padding-left: 58em;
+    padding-top: 0.65em;
+  }
+  .dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 25px;
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown-content a {
+    font-size: 35px;
+  }
+  .copyright p {
+    padding-left: 10em;
+    padding-bottom: 0;
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 768px) and (min-height: 1020px) {
+  /* iPad */
+  section h1 {
+    mix-blend-mode: color-burn;
+    display: block;
+    padding-top: 350px;
+    padding-left: 30px;
+    margin: auto;
+    color: teal;
+    font-size: 150px;
+  }
+  nav {
+    padding-left: 44em;
+    padding-top: 0.65em;
+  }
+  .dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 18px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown-content a {
+    font-size: 20px;
+  }
+  .copyright p {
+    padding-left: 10em;
+    padding-bottom: 0;
+    font-size: 1.5em;
+  }
+}
 @media screen and (max-width: 720px) {
   section h1 {
     mix-blend-mode: color-burn;
@@ -120,17 +206,6 @@ footer {
     margin: auto;
     color: teal;
     font-size: 75px;
-  }
-}
-@media screen and (max-width: 768px) {
-  section h1 {
-    mix-blend-mode: color-burn;
-    display: block;
-    padding-top: 400px;
-    padding-left: 50px;
-    margin: auto;
-    color: teal;
-    font-size: 135px;
   }
 }
 @media screen and (max-width: 540px) {
@@ -144,27 +219,90 @@ footer {
     font-size: 100px;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 414px) and (min-height: 736px) {
+  /* iPhone 6/7/8 Plus */
   section h1 {
     mix-blend-mode: color-burn;
     display: block;
-    padding-top: 290px;
-    padding-left: 30px;
+    padding-top: 255px;
+    padding-left: 20px;
     margin: auto;
     color: teal;
     font-size: 80px;
   }
+  nav {
+    padding-left: 22.5em;
+    padding-top: 0.5em;
+  }
+  .copyright p {
+    padding-left: 8.5em;
+    padding-bottom: 0;
+    font-size: 0.85em;
+  }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) and (min-height: 596px) {
+  /* My Phone */
   section h1 {
     mix-blend-mode: color-burn;
     display: block;
-    padding-top: 280px;
-    padding-left: 30px;
+    padding-top: 245px;
+    padding-left: 15px;
     margin: auto;
     color: teal;
     font-size: 75px;
   }
+  nav {
+    padding-left: 21em;
+    padding-top: 0.5em;
+  }
+  .copyright p {
+    padding-left: 7em;
+    padding-bottom: 0;
+    font-size: 0.85em;
+  }
+}
+@media screen and (max-width: 414px) and (min-height: 896px) {
+  /* iPhone Xs Max */
+  section h1 {
+    mix-blend-mode: color-burn;
+    display: block;
+    padding-top: 350px;
+    padding-left: 20px;
+    margin: auto;
+    color: teal;
+    font-size: 80px;
+  }
+  nav {
+    padding-left: 23.2em;
+    padding-top: 0.5em;
+  }
+  .dropbtn {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+  }
+  .copyright p {
+    padding-left: 7em;
+    padding-bottom: 0;
+    font-size: 0.85em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* iPhone 6/7/8 */
+  section h1 {
+    mix-blend-mode: color-burn;
+    display: block;
+    padding-top: 240px;
+    padding-left: 15px;
+    margin: auto;
+    color: teal;
+    font-size: 75px;
+  }
+
   nav {
     padding-left: 20.5em;
     padding-top: 0.5em;
@@ -178,7 +316,20 @@ footer {
     cursor: pointer;
   }
   .copyright p {
-    padding-left: 11em;
-    font-size: 0.7em;
+    padding-left: 7em;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-height: 812px) {
+  /* iPhone X,XS */
+  section h1 {
+    mix-blend-mode: color-burn;
+    display: block;
+    padding-top: 300px;
+    padding-left: 15px;
+    margin: auto;
+    color: teal;
+    font-size: 75px;
   }
 }
