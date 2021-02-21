@@ -17,6 +17,12 @@ html {
   grid-template-areas: "nav nav" "Header Header" "Content Content" "Footer Footer";
 }
 .container#social {
+  background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2013/04/09/73184/fc16187634c3753561f6e13bbfbb81af-1400.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin: auto;
+  height: 100vh;
   display: grid;
   text-align: center;
   grid-template-columns: 300px auto;
@@ -28,17 +34,16 @@ nav {
   margin-bottom: 10em;
   padding-top: 0.22em;
   grid-area: nav;
-  background-color: lightslategray;
 }
 .dropdown {
   position: relative;
   display: inline-block;
 }
 .dropbtn {
-  background-color: #f9f4ed;
+  background-color: transparent;
   color: rgb(0, 0, 0);
-  padding: 16px;
-  font-size: 30px;
+  padding: 0px 10px;
+  font-size: 40px;
   font-weight: 900;
   border: none;
   cursor: pointer;
@@ -66,7 +71,7 @@ nav {
   display: block;
 }
 .dropdown:hover .dropbtn {
-  background-color: #c66;
+  background-color: cadetblue;
 }
 header {
   margin: 0;
@@ -75,15 +80,22 @@ header {
   background-color: lightsalmon;
 }
 header#social {
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
   grid-area: Header;
-  background-color: lightpink;
+  background-color: transparent;
 }
 header h1 {
   text-align: center;
   font-size: 1.5em;
   color: #444;
+}
+header#social h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px #ff0000;
+  background-color: transparent;
 }
 section {
   background-color: rgb(91, 155, 240);
@@ -92,6 +104,7 @@ section {
 section#social {
   background-color: moccasin;
   grid-area: Content;
+  background-color: transparent;
 }
 section p:hover {
   background-color: rgb(74, 252, 169);
@@ -116,6 +129,7 @@ footer {
 footer#social {
   background-color: rgb(255, 94, 94);
   grid-area: Footer;
+  background-color: transparent;
 }
 footer p {
   font-size: 25px;
@@ -142,7 +156,7 @@ footer p {
 }
 table,
 td {
-  margin: 50px;
+  margin-top: 70px;
   padding: 8px;
   border: rgb(100, 100, 100) 1px solid;
   border-collapse: collapse;
@@ -159,7 +173,7 @@ td#img:hover {
   border-right: none;
 }
 .center tr:hover {
-  background-color: rgb(213, 243, 255);
+  background-color: #fff;
 }
 table.center {
   margin-left: auto;
@@ -176,7 +190,8 @@ table.center {
 .center a:hover {
   text-decoration: none;
   text-align: left;
-  color: darkslategray;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px #fd8892;
 }
 /* @media screen and (max-width: 450px) {
   .img-grid img {
