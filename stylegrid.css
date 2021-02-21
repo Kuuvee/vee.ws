@@ -2,9 +2,22 @@
   margin: 0;
   padding: 0;
 }
+body,
+html {
+  margin: 0;
+  background-color: #f9f4ed;
+  font-family: "HelveticaNeue-CondensedBold", "trebuchet ms", sans-serif;
+}
 .container {
   display: grid;
   font-size: 50px;
+  text-align: center;
+  grid-template-columns: 300px auto;
+  grid-template-rows: 0px 100px minmax(250px, auto) 70px;
+  grid-template-areas: "nav nav" "Header Header" "Content Content" "Footer Footer";
+}
+.container#social {
+  display: grid;
   text-align: center;
   grid-template-columns: 300px auto;
   grid-template-rows: 0px 100px minmax(250px, auto) 70px;
@@ -61,6 +74,12 @@ header {
   grid-area: Header;
   background-color: lightsalmon;
 }
+header#social {
+  margin: 0;
+  padding: 0;
+  grid-area: Header;
+  background-color: lightpink;
+}
 header h1 {
   text-align: center;
   font-size: 1.5em;
@@ -70,24 +89,32 @@ section {
   background-color: rgb(91, 155, 240);
   grid-area: Content;
 }
+section#social {
+  background-color: moccasin;
+  grid-area: Content;
+}
 section p:hover {
   background-color: rgb(74, 252, 169);
   grid-area: Content;
 }
 .img-grid img {
   height: 300px;
-  width: 450px;
-  border-radius: 100px;
+  width: 400px;
+  border-radius: 50px;
   margin: 10px 30px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 .img-grid img:hover {
-  border-radius: 50px;
+  border-radius: 100px;
   margin: 10px 30px;
   box-shadow: 5px 5px 1px rgba(255, 0, 0, 0.5);
 }
 footer {
   background-color: orange;
+  grid-area: Footer;
+}
+footer#social {
+  background-color: rgb(255, 94, 94);
   grid-area: Footer;
 }
 footer p {
@@ -113,8 +140,45 @@ footer p {
   border: salmon 5px solid;
   background-color: pink;
 }
-
-@media screen and (max-width: 450px) {
+table,
+td {
+  margin: 50px;
+  padding: 8px;
+  border: rgb(100, 100, 100) 1px solid;
+  border-collapse: collapse;
+  border-left: none;
+  border-right: none;
+  text-align: left;
+}
+td:hover {
+  border-style: double;
+  border-left: none;
+}
+td#img:hover {
+  border-left: none;
+  border-right: none;
+}
+.center tr:hover {
+  background-color: rgb(213, 243, 255);
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.center img {
+  width: 70px;
+}
+.center a {
+  text-decoration: none;
+  text-align: left;
+  color: #000;
+}
+.center a:hover {
+  text-decoration: none;
+  text-align: left;
+  color: darkslategray;
+}
+/* @media screen and (max-width: 450px) {
   .img-grid img {
     height: 200px;
     width: 300px;
@@ -143,3 +207,53 @@ footer p {
     background-color: pink;
   }
 }
+@media screen and (max-width: 414px) {
+  .container#social {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 500px auto;
+    grid-template-rows: 0px 100px 586px 50px;
+    grid-template-areas: "nav nav" "Header Header" "Content Content" "Footer Footer";
+    margin: 0 auto;
+    width: 50%;
+  }
+  table,
+  td {
+    margin: 35px;
+    padding: 10px;
+    border: rgb(100, 100, 100) 1px solid;
+    border-collapse: collapse;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+  }
+  td:hover {
+    border-style: double;
+    border-left: none;
+  }
+  td#img:hover {
+    border-left: none;
+    border-right: none;
+  }
+  .center tr:hover {
+    background-color: rgb(213, 243, 255);
+  }
+  table.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .center img {
+    width: 55px;
+  }
+  .center a {
+    text-decoration: none;
+    text-align: left;
+    color: #000;
+    font-size: 0.5em;
+  }
+  .center a:hover {
+    text-decoration: none;
+    text-align: left;
+    color: darkslategray;
+  }
+} */

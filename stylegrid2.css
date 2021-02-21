@@ -155,41 +155,110 @@ footer p {
   font-size: 25px;
   padding-top: 0px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 414px) {
   .container {
     display: grid;
     font-size: 50px;
     text-align: center;
-    grid-template-columns: 300px;
-    grid-template-rows: 10px 100px minmax(100px, auto) 20px;
+    grid-template-columns: 414px auto;
+    grid-template-rows: 10px 250px minmax(300px, auto) 50px;
     grid-template-areas: "Nav Nav" "Header Header" "Content Content" "Footer Footer";
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 40%;
   }
   header {
-    padding-top: 15%;
+    padding-top: 1.7em;
     grid-area: Header;
   }
   header h1 {
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1.5em;
     color: #444;
   }
+  nav {
+    grid-area: Nav;
+    padding-left: 15em;
+    margin-bottom: 10em;
+    padding-top: 1em;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropbtn {
+    background-color: #f9f4ed;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 30px;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 20px;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #c66;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown:hover .dropbtn {
+    background-color: #c66;
+  }
+  section {
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-area: Content;
+  }
   section h1 {
-    font-size: 0.5em;
+    font-size: 0.7em;
     text-align: left;
     margin-left: 40px;
     margin-bottom: 10px;
     color: #444;
     font-weight: normal;
   }
+  .post-list {
+    padding-bottom: 2em;
+    margin-bottom: 0;
+  }
   .post-meta {
     margin: 0;
     padding: 0.25em 0;
     color: #aaa;
     color: rgba(0, 0, 0, 0.35);
-    font-size: 0.35em;
+    font-size: 0.6em;
+  }
+  .post-block {
+    margin: 0;
+    padding: 0.4em 2em;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: none;
+    border-right: none;
+    text-align: left;
+  }
+  .post-block a {
+    text-decoration: none;
+    color: #444;
+  }
+  .post-block .post-title {
+    margin: 0;
   }
   .post-block .post-title a:before {
     content: "";
@@ -201,21 +270,11 @@ footer p {
     right: 0;
   }
   .post-title {
-    font-size: 0.4em;
-  }
-  .post-block {
-    margin: 0;
-    padding: 0.4em 1em;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-left: none;
-    border-right: none;
-    text-align: left;
+    font-size: 0.7em;
   }
   .post-block:hover {
     margin: 0;
-    padding: 0.4em 1em;
+    padding: 0.4em 2em;
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -226,9 +285,10 @@ footer p {
     color: #c66;
     border-style: inset;
   }
+
   section hr {
     border: 0;
-    height: 0.12em;
+    height: 0.3em;
     background: #c66;
     display: block;
     clear: both;
@@ -240,7 +300,7 @@ footer p {
     grid-area: Footer;
   }
   footer p {
-    font-size: 15px;
+    font-size: 25px;
     padding-top: 0px;
   }
 }
